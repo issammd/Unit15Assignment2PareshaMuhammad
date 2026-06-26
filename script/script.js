@@ -1,21 +1,16 @@
-/* Navigation container */
-nav {
-    margin-top: 20px;
-}
-
-/* Remove bullets and align items */
+/* Remove bullet points */
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Make list horizontal */
+/* Make nav horizontal */
 .nav-links li {
     display: inline-block;
 }
 
-/* Navigation buttons */
+/* Style buttons */
 .nav-links a {
     text-decoration: none;
     color: black;
