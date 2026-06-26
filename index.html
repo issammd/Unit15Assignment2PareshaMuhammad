@@ -18,7 +18,20 @@
             margin-top: 20px;
         }
 
-        nav a {
+        /* Remove bullet points */
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Make horizontal */
+        .nav-links li {
+            display: inline-block;
+        }
+
+        /* Buttons */
+        .nav-links a {
             text-decoration: none;
             color: black;
             background-color: #d6cbb5;
@@ -30,7 +43,7 @@
             transition: 0.3s;
         }
 
-        nav a:hover {
+        .nav-links a:hover {
             background-color: #c4b89f;
         }
 
@@ -46,20 +59,19 @@
 <body>
 
     <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/cats.html">Our Cats</a></li>
+            <li><a href="pages/menu.html">Menu</a></li>
+            <li><a href="pages/booking.html">Book Visit</a></li>
+            <li><a href="pages/rules.html">Rules</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/cats.html">Our Cats</a></li>
-        <li><a href="pages/menu.html">Menu</a></li>
-        <li><a href="pages/booking.html">Book Visit</a></li>
-        <li><a href="pages/rules.html">Rules</a></li>
-    </ul>
-</nav>
-
-    <!-- Image -->
+    <!-- Cat Image -->
     <div class="hero">
-        <img src="cat.png" alt="Cat">
+        <img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHUyMzMxNjM5LWltYWdlXzItbDBqOXFvd3IucG5n.png" alt="Cat">
     </div>
 
 </body>
