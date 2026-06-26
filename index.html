@@ -10,69 +10,81 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
+        }
+
+        /* Header */
+        header {
+            background-color: #d6cbb5;
+            padding: 20px;
             text-align: center;
         }
 
         /* Navigation */
         nav {
-            margin-top: 20px;
+            background-color: #c4b89f;
+            text-align: center;
+            padding: 10px;
         }
 
-        /* Remove bullet points */
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        /* Make horizontal */
-        .nav-links li {
-            display: inline-block;
-        }
-
-        /* Buttons */
-        .nav-links a {
+        nav a {
             text-decoration: none;
             color: black;
-            background-color: #d6cbb5;
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 20px;
-            display: inline-block;
+            margin: 10px;
             font-weight: bold;
-            transition: 0.3s;
         }
 
-        .nav-links a:hover {
-            background-color: #c4b89f;
+        nav a:hover {
+            text-decoration: underline;
         }
 
-        /* Image */
-        .hero img {
-            width: 60%;
-            max-width: 600px;
-            margin-top: 40px;
+        /* Main content */
+        main {
+            text-align: center;
+            padding: 30px;
+        }
+
+        main img {
+            width: 50%;
+            max-width: 400px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #d6cbb5;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <header>
+        <h1>Whiskers Café</h1>
+        <p>Relax with coffee and cats 🐱</p>
+    </header>
+
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/cats.html">Our Cats</a></li>
-            <li><a href="pages/menu.html">Menu</a></li>
-            <li><a href="pages/booking.html">Book Visit</a></li>
-            <li><a href="pages/rules.html">Rules</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="pages/cats.html">Our Cats</a>
+        <a href="pages/menu.html">Menu</a>
+        <a href="pages/booking.html">Book Visit</a>
+        <a href="pages/rules.html">Rules</a>
     </nav>
 
-    <!-- Cat Image -->
-    <div class="hero">
+    <main>
+        <h2>Welcome!</h2>
+        <p>Visit our cosy café and meet our friendly cats.</p>
+
         <img src="https://img.freepik.com/premium-photo/young-ginger-cat-close-up-isolated-white-background_270100-84.jpg?w=360" alt="Cat">
-    </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Whiskers Café</p>
+    </footer>
 
 </body>
 </html>
