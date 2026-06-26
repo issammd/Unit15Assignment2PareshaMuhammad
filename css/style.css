@@ -29,15 +29,13 @@ nav a{
 
 /* Main Card */
 
-.hero{
-    max-width:1200px;
-    margin:auto;
-    border:1px solid #444;
-    background:#efe8e3;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:18px;
+
+.hero img {
+    width: 60%;
+    max-width: 600px;
+    margin-top: 40px;
+    background-color: transparent;
+    mix-blend-mode: multiply;
 }
 
 .content{
