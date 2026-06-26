@@ -3,53 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bethany Jones</title>
+    <title>Whiskers Café</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
+        /* Navigation Bar */
+        nav {
+            margin-top: 20px;
+        }
 
-    <nav>
-        <a href="#">BIO</a>
-        <a href="#">PORTFOLIO</a>
-        <a href="#">PODCAST</a>
-        <a href="#">BLOG</a>
-    </nav>
+        nav a {
+            text-decoration: none;
+            color: black;
+            background-color: #d6cbb5;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
 
-    <section class="hero">
+        nav a:hover {
+            background-color: #c4b89f;
+        }
 
-        <div class="content">
+        /* Main Image */
+        .hero img {
+            width: 60%;
+            max-width: 600px;
+            margin-top: 40px;
+        }
 
-            <h1>Bethany Jones</h1>
+        /* Mobile */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
 
-            <p>
-                I'm a dedicated culture critic and blogger
-                located in San Francisco, California.
-            </p>
-
-            <div class="social">
-                <h3>@reallygreatsite</h3>
-
-                <div class="icons">
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-linkedin"></i>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="image">
-            <img src="profile.jpg" alt="Bethany Jones">
-        </div>
-
-    </section>
-
-</body>
-</html>
-
-</html>
+            .hero img {
+                width: 90%;
+            }
