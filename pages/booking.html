@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Visit — Whiskers Café</title>
+<meta name="description" content="Book your visit to Whiskers Café — choose a date, time and number of guests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="paw">🐾</span> Whiskers Café</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cats.html">Meet the Cats</a></li>
+      <li><a href="menu.html">Menu &amp; Pricing</a></li>
+      <li><a href="book.html" aria-current="page">Book a Visit</a></li>
+      <li><a href="care.html">Cat Care &amp; Rules</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Reserve your spot</p>
+        <h1>Book a visit</h1>
+        <p>Sessions run for 60 minutes. Booking ahead guarantees your place, especially at weekends.</p>
+      </div>
+
+      <form id="booking-form" class="form-card" novalidate>
+
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <span class="error-text">Please tell us your name.</span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <span class="error-text">Please enter a valid email address.</span>
+        </div>
+
+        <div class="field">
+          <label for="date">Visit date</label>
+          <input type="date" id="date" name="date" required>
+          <span class="error-text">Please choose a valid, upcoming date.</span>
+        </div>
+
+        <div class="field">
+          <label for="time">Time slot</label>
+          <select id="time" name="time" required>
+            <option value="">Choose a time</option>
+            <option value="9:00 – 10:00">9:00 – 10:00</option>
+            <option value="11:00 – 12:00">11:00 – 12:00</option>
+            <option value="13:00 – 14:00">13:00 – 14:00</option>
+            <option value="15:00 – 16:00">15:00 – 16:00</option>
+            <option value="16:30 – 17:30">16:30 – 17:30</option>
+          </select>
+          <span class="error-text">Please choose a time slot.</span>
+        </div>
+
+        <div class="field">
+          <label for="guests">Number of guests</label>
+          <input type="number" id="guests" name="guests" min="1" max="8" value="1" required>
+          <span class="hint">Maximum of 8 guests per session.</span>
+          <span class="error-text">Please enter how many guests are visiting.</span>
+        </div>
+
+        <div class="field">
+          <fieldset>
+            <legend>Anything we should know?</legend>
+            <div class="checkbox-row" style="margin-bottom:0.8rem;">
+              <input type="checkbox" id="allergy" name="allergy">
+              <label for="allergy" style="margin:0; font-weight:400;">Someone in my group has a cat allergy</label>
+            </div>
+            <label for="notes" style="font-weight:400;">Notes (optional)</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="E.g. celebrating a birthday, mobility access needed"></textarea>
+          </fieldset>
+        </div>
+
+        <button type="submit" class="btn" style="width:100%;">Confirm booking</button>
+
+        <div id="confirmation">
+          <h3>Booking received 🐾</h3>
+          <p id="confirmation-details"></p>
+        </div>
+
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Whiskers Café</h3>
+        <p>12 Independence Street<br>Manchester, M1 4BT</p>
+      </div>
+      <div>
+        <h3>Opening hours</h3>
+        <p>Mon–Fri: 9am – 6pm<br>Sat–Sun: 10am – 5pm</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p>
+          <a href="cats.html">Meet the Cats</a><br>
+          <a href="menu.html">Menu &amp; Pricing</a><br>
+          <a href="care.html">Cat Care &amp; Rules</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Whiskers Café. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
