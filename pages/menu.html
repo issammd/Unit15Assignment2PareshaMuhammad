@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu &amp; Pricing — Whiskers Café</title>
+<meta name="description" content="Browse the Whiskers Café menu, drinks, food and visit pricing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="paw">🐾</span> Whiskers Café</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cats.html">Meet the Cats</a></li>
+      <li><a href="menu.html" aria-current="page">Menu &amp; Pricing</a></li>
+      <li><a href="book.html">Book a Visit</a></li>
+      <li><a href="care.html">Cat Care &amp; Rules</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What's on</p>
+        <h1>Menu &amp; visit pricing</h1>
+        <p>A visit includes your entry to the cat lounge plus anything you order from the café counter.</p>
+      </div>
+
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 3rem;">
+
+        <div class="card menu-group">
+          <h3>Hot drinks</h3>
+          <div class="menu-item">
+            <span>Filter coffee<span class="desc">Locally roasted, ask for your milk of choice</span></span>
+            <span class="price">£3.20</span>
+          </div>
+          <div class="menu-item">
+            <span>Flat white<span class="desc">Double shot, silky micro-foam</span></span>
+            <span class="price">£3.60</span>
+          </div>
+          <div class="menu-item">
+            <span>Matcha latte<span class="desc">Ceremonial grade, lightly sweetened</span></span>
+            <span class="price">£3.90</span>
+          </div>
+          <div class="menu-item">
+            <span>Hot chocolate<span class="desc">With whipped cream and cat-shaped marshmallows</span></span>
+            <span class="price">£3.50</span>
+          </div>
+        </div>
+
+        <div class="card menu-group">
+          <h3>Food</h3>
+          <div class="menu-item">
+            <span>Cinnamon bun<span class="desc">Baked fresh each morning</span></span>
+            <span class="price">£3.00</span>
+          </div>
+          <div class="menu-item">
+            <span>Avocado toast<span class="desc">Sourdough, chilli flakes, lemon</span></span>
+            <span class="price">£6.50</span>
+          </div>
+          <div class="menu-item">
+            <span>Soup of the day<span class="desc">With crusty bread</span></span>
+            <span class="price">£5.80</span>
+          </div>
+          <div class="menu-item">
+            <span>Cat-paw shortbread<span class="desc">Baked in-house, vegan</span></span>
+            <span class="price">£2.50</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="section-head">
+        <p class="eyebrow">Cat lounge entry</p>
+        <h2>Visit pricing</h2>
+        <p>Sessions are 60 minutes and include unlimited cat cuddles (cat permitting).</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Weekday session</h3>
+          <p class="price" style="font-size:1.6rem;">£8 <span style="font-size:0.9rem; font-weight:400; color:#5a4a3f;">per person</span></p>
+          <p>Mon–Fri, all day. Great for a quiet catch-up or solo visit.</p>
+        </div>
+        <div class="card">
+          <h3>Weekend session</h3>
+          <p class="price" style="font-size:1.6rem;">£10 <span style="font-size:0.9rem; font-weight:400; color:#5a4a3f;">per person</span></p>
+          <p>Sat–Sun. Booking ahead is recommended as weekends fill quickly.</p>
+        </div>
+        <div class="card">
+          <h3>Under 12s</h3>
+          <p class="price" style="font-size:1.6rem;">£5 <span style="font-size:0.9rem; font-weight:400; color:#5a4a3f;">per child</span></p>
+          <p>Children must be supervised by an adult at all times in the lounge.</p>
+        </div>
+      </div>
+
+      <p class="text-center" style="margin-top:2.5rem;"><a href="book.html" class="btn">Book a visit</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Whiskers Café</h3>
+        <p>12 Independence Street<br>Manchester, M1 4BT</p>
+      </div>
+      <div>
+        <h3>Opening hours</h3>
+        <p>Mon–Fri: 9am – 6pm<br>Sat–Sun: 10am – 5pm</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p>
+          <a href="cats.html">Meet the Cats</a><br>
+          <a href="care.html">Cat Care &amp; Rules</a><br>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Whiskers Café. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
