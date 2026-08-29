@@ -1,121 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Our Cats</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #e9e1dc;
-            text-align: center;
-        }
-
-        /* Navigation */
-        nav {
-            margin-top: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: black;
-            background-color: #d6cbb5;
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 20px;
-            display: inline-block;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: #c4b89f;
-        }
-
-        h1 {
-            margin-top: 30px;
-        }
-
-        /* Cat cards */
-        .cats-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 40px;
-        }
-
-        .cat-card {
-            background: white;
-            padding: 15px;
-            border-radius: 15px;
-            width: 250px;
-            box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        .cat-card:hover {
-            transform: scale(1.05);
-        }
-
-        .cat-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .cat-card h3 {
-            margin: 10px 0 5px;
-        }
-
-        .cat-card p {
-            font-size: 14px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet the Cats — Whiskers Café</title>
+<meta name="description" content="Meet the resident cats of Whiskers Café and find out which ones are ready for adoption.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        Home</a>
-        Our Cats
-        Menu</a>
-        Book Visit</a>
-        Rules</a>
-    </nav>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="paw">🐾</span> Whiskers Café</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cats.html" aria-current="page">Meet the Cats</a></li>
+      <li><a href="menu.html">Menu &amp; Pricing</a></li>
+      <li><a href="book.html">Book a Visit</a></li>
+      <li><a href="care.html">Cat Care &amp; Rules</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <h1>Meet Our Cats</h1>
+<main>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our residents</p>
+        <h1>Meet the cats</h1>
+        <p>Every cat below lives at Whiskers Café full-time and is available to meet during your visit. Cats marked "Adoption pending" are still happy to say hello, but have already found a home.</p>
+      </div>
 
-    <div class="cats-container">
+      <div class="grid">
 
-        <!-- Cat 1 -->
-        <div class="cat-card">
-            https://facts.net/wp-content/uploads/2021/07/ginger-3447190_1280.jpg
-            <h3>Ginger</h3>
-            <p>Calm and relaxed, loves lounging around.</p>
+        <div class="card">
+          <div class="cat-avatar">🐈‍⬛</div>
+          <h3>Biscuit</h3>
+          <p>Age 3 · Domestic Shorthair</p>
+          <p>A gentle soul who loves lap naps, slow blinks, and being the first to greet regulars by name.</p>
+          <span class="tag">Friendly</span><span class="tag">Good with kids</span>
         </div>
 
-        <!-- Cat 2 -->
-        <div class="cat-card">
-            https://www.bubblypet.com/wp-content/uploads/2022/07/White-Persian-cat-with-long-hair.jpg
-            <h3>Snowy</h3>
-            <p>Fluffy and elegant, enjoys quiet attention.</p>
+        <div class="card">
+          <div class="cat-avatar">🐱</div>
+          <h3>Marmalade</h3>
+          <p>Age 2 · Ginger Tabby</p>
+          <p>Energetic and endlessly curious. Loves feather toys and will happily supervise your laptop screen.</p>
+          <span class="tag">Playful</span><span class="tag">Confident</span>
         </div>
 
-        <!-- Cat 3 -->
-        <div class="cat-card">
-            https://exploringanimals.com/wp-content/uploads/2025/06/Solid.jpg
-            <h3>Midnight</h3>
-            <p>Unique coloured fur and very curious personality.</p>
+        <div class="card">
+          <div class="cat-avatar">🐈</div>
+          <h3>Willow</h3>
+          <p>Age 4 · Grey &amp; White</p>
+          <p>Quiet and a little shy around new faces, but warms up quickly with a treat and a patient hand.</p>
+          <span class="tag">Shy at first</span><span class="tag adopted">Adoption pending</span>
         </div>
 
-        <!-- Cat 4 -->
-        <div class="cat-card">
-            https://www.rd.com/wp-content/uploads/2023/04/GettyImages-1249883878-e1682348435989.jpg?fit=750,750
-            <h3>Shadow</h3>
-            <p>Playful and energetic, loves exploring.</p>
+        <div class="card">
+          <div class="cat-avatar">🐈‍⬛</div>
+          <h3>Salem</h3>
+          <p>Age 1 · Black Shorthair</p>
+          <p>The café's youngest resident — a bundle of energy who's usually found chasing the light from the window.</p>
+          <span class="tag">Playful</span><span class="tag">Independent</span>
         </div>
 
+        <div class="card">
+          <div class="cat-avatar">🐱</div>
+          <h3>Clementine</h3>
+          <p>Age 6 · Tortoiseshell</p>
+          <p>A calm, older cat who prefers a warm windowsill to chasing toys. Perfect company for quiet reading.</p>
+          <span class="tag">Calm</span><span class="tag">Senior cat</span>
+        </div>
+
+        <div class="card">
+          <div class="cat-avatar">🐈</div>
+          <h3>Pepper</h3>
+          <p>Age 2 · Grey Tabby</p>
+          <p>Recently adopted by a regular customer — congratulations, Pepper!</p>
+          <span class="tag adopted">Adopted</span>
+        </div>
+
+      </div>
     </div>
+  </section>
 
+  <section class="section-alt text-center">
+    <div class="container">
+      <h2>Thinking of adopting?</h2>
+      <p>Ask any member of staff during your visit, or read our care guidelines before you apply.</p>
+      <a href="care.html" class="btn btn-outline">Cat care &amp; rules</a>
+      <a href="book.html" class="btn">Book a visit</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Whiskers Café</h3>
+        <p>12 Independence Street<br>Manchester, M1 4BT</p>
+      </div>
+      <div>
+        <h3>Opening hours</h3>
+        <p>Mon–Fri: 9am – 6pm<br>Sat–Sun: 10am – 5pm</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p>
+          <a href="menu.html">Menu &amp; Pricing</a><br>
+          <a href="book.html">Book a Visit</a><br>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Whiskers Café. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
