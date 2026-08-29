@@ -1,100 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Page settings -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whiskers Café</title>
-
-    <style>
-        /* Body styling */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        /* Header section (top title area) */
-        header {
-            background-color: #d6cbb5;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Navigation bar */
-        nav {
-            background-color: #c4b89f;
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* Navigation links */
-        nav a {
-            text-decoration: none; /* remove underline */
-            color: black;
-            margin: 10px;
-            font-weight: bold;
-        }
-
-        /* Hover effect */
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Main content area */
-        main {
-            text-align: center;
-            padding: 30px;
-        }
-
-        /* Image styling */
-        main img {
-            width: 50%;
-            max-width: 400px;
-        }
-
-        /* Footer at bottom */
-        footer {
-            background-color: #d6cbb5;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whiskers Café — Coffee, Cats & Calm</title>
+<meta name="description" content="Whiskers Café is a cosy cat café combining great coffee, relaxation and cat adoption. Book your visit today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Header (website title and intro) -->
-    <header>
-        <h1>Whiskers Café</h1>
-        <p>Relax with coffee and cats 🐱</p>
-    </header>
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="paw">🐾</span> Whiskers Café</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="cats.html">Meet the Cats</a></li>
+      <li><a href="menu.html">Menu &amp; Pricing</a></li>
+      <li><a href="book.html">Book a Visit</a></li>
+      <li><a href="care.html">Cat Care &amp; Rules</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Navigation menu -->
-    <nav>
-        <a href="index.html">Home</a>
-        pages/cats.htmlOur Cats</a>
-        /menu.html">Menu</a>
-        pages/booking.htmlBook Visit</a>
-        ">Rules</a>
-    </nav>
+<main>
 
-    <!-- Main content -->
-    <main>
-        <h2>Welcome!</h2>
-        <p>Visit our cosy café and meet our friendly cats.</p>
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Independence Street, open daily</p>
+        <h1>Good coffee. Better company. Best cats.</h1>
+        <p class="lead">Whiskers Café is a warm corner of the city where you can slow down with a proper coffee while our resident cats look for their forever homes.</p>
+        <div class="hero-actions">
+          <a href="book.html" class="btn">Book a visit</a>
+          <a href="cats.html" class="btn btn-outline">Meet the cats</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span>🐱</span></div>
+    </div>
+  </section>
 
-        <!-- Cat image -->
-        https://img.freepik.com/premium-photo/young-ginger-cat-close-up-isolated-white-background_270100-84.jpg?w=360" alt="Cat">
-    </main>
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Why visit</p>
+        <h2>A little sanctuary, one cup at a time</h2>
+        <p>Every visit supports our cat welfare work — from vet bills to finding cats loving homes.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="cat-avatar">☕</div>
+          <h3>Proper coffee</h3>
+          <p>Locally roasted beans, oat milk as standard, and a menu built for lingering, not rushing.</p>
+        </div>
+        <div class="card">
+          <div class="cat-avatar">🐈</div>
+          <h3>Calm company</h3>
+          <p>Our cats roam a dedicated lounge space — come to read, work quietly, or just unwind with them.</p>
+        </div>
+        <div class="card">
+          <div class="cat-avatar">🏡</div>
+          <h3>Real adoptions</h3>
+          <p>Every cat you meet is looking for a home. We've found over 60 cats families since opening.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Whiskers Café</p>
-    </footer>
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Featured residents</p>
+        <h2>Say hello to a few of our regulars</h2>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="cat-avatar">🐈‍⬛</div>
+          <h3>Biscuit</h3>
+          <p>A gentle 3-year-old who loves lap naps and slow blinks.</p>
+          <span class="tag">Friendly</span><span class="tag">Good with kids</span>
+        </div>
+        <div class="card">
+          <div class="cat-avatar">🐱</div>
+          <h3>Marmalade</h3>
+          <p>Energetic and curious — usually first to greet you at the door.</p>
+          <span class="tag">Playful</span><span class="tag">Confident</span>
+        </div>
+        <div class="card">
+          <div class="cat-avatar">🐈</div>
+          <h3>Willow</h3>
+          <p>Quiet and a little shy, but warms up fast with a treat.</p>
+          <span class="tag">Shy at first</span><span class="tag adopted">Adoption pending</span>
+        </div>
+      </div>
+      <p class="text-center" style="margin-top:2rem;"><a href="cats.html" class="btn btn-outline">See all cats</a></p>
+    </div>
+  </section>
 
+  <section class="section-alt text-center">
+    <div class="container">
+      <h2>Ready to visit?</h2>
+      <p>Sessions are timed to keep things calm and comfortable for the cats — booking ahead means you're guaranteed a spot.</p>
+      <a href="book.html" class="btn">Book a visit</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Whiskers Café</h3>
+        <p>12 Independence Street<br>Manchester, M1 4BT</p>
+      </div>
+      <div>
+        <h3>Opening hours</h3>
+        <p>Mon–Fri: 9am – 6pm<br>Sat–Sun: 10am – 5pm</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p>
+          <a href="cats.html">Meet the Cats</a><br>
+          <a href="menu.html">Menu &amp; Pricing</a><br>
+          <a href="care.html">Cat Care &amp; Rules</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Whiskers Café. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
